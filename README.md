@@ -5,6 +5,9 @@ Simple web-browser tests using Robot Framework and Selenium2Library. Two example
 
 
 
+
+Further reading and official sites:
+
 Robot Framework documentation: http://robotframework.org/robotframework/
 
 Selenium2Library documentation: http://robotframework.org/Selenium2Library/Selenium2Library.html
