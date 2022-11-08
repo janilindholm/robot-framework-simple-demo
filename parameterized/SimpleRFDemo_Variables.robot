@@ -1,10 +1,10 @@
 # Define variables here
 
 *** Variables ***
-${PAGEADDRESS}   	 http://maanmittauslaitos.fi/
-${PAGETITLE}     	 Etusivu | Maanmittauslaitos
-${IMAGE_ELEMENT}	//img[@alt='Etusivu']
-${BROWSER}       	 chrome		# change the Browser variable to demo with Firefox/IE. Note that you have to have the webdrivers in your Python/Scripts-folder and in PATH
+${PAGEADDRESS}   	 https://mavericks.fi/careers/                                                          # url for automation to enter to
+${PAGETITLE}     	 Careers - The best place for software consultants and the fairest compensation model   # page title has to match the variable assigned
+${TEST_ELEMENT}	     Become a Maverick                                                                      # test element that has to be found from the page
+${BROWSER}       	 chrome																					# browser selection for the automation to use
 
 
 ########################################

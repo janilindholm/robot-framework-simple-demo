@@ -5,12 +5,12 @@ Resource		SimpleRFDemo_resource.robot
 	
 *** Keywords ***
 Suite Setup
-	Set Library Search Order    Selenium2Library
+	Set Library Search Order    				SeleniumLibrary
 
 Open Browser
-	Selenium2Library.Open Browser    ${PAGEADDRESS}    ${BROWSER}
-	Selenium2Library.Go To   		 ${PAGEADDRESS}
-	Selenium2Library.Maximize Browser Window
+	SeleniumLibrary.Open Browser    			${PAGEADDRESS}    ${BROWSER}
+	SeleniumLibrary.Go To   		 			${PAGEADDRESS}
+	SeleniumLibrary.Maximize Browser Window
 
 Close Browsers
     Builtin.Sleep    1

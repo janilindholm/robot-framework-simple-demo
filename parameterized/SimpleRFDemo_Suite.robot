@@ -1,22 +1,23 @@
 *** Settings ***
-Documentation   Simple Robot Framework and Selenium2Library Demo
+Documentation   Simple Robot Framework and SeleniumLibrary Demo
 Suite Setup		Suite Setup
 Resource		SimpleRFDemo_resource.robot
 
 # Test cases start here
 
 *** Test Cases ***
-Navigating to page
-	[Documentation]	Opens the desired webpage
+Navigating to Mavericks Career page
+	[Documentation]	Opens the desired webpage (Mavericks Careers)
 	Open Browser
 
-Check Title
-	[Documentation]	Checks the title e.g. asserts it
+Check Title of the page
+	[Documentation]	Checks the Mavericks page title e.g. asserts it (Mavericks Careers)
 	Title Should Be					${PAGETITLE}
 
-Check Image Element Exists
+Check Page Contains "Become a Maverick"
 	[Documentation]	Checks that the defined image element exists
-	Page Should Contain Element		${IMAGE_ELEMENT}
+	Wait Until Page Contains		${TEST_ELEMENT}
+	Page Should Contain				${TEST_ELEMENT}
 	
 Close Browsers
 	Close All Browsers
